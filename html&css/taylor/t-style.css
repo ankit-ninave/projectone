@@ -1,0 +1,358 @@
+        .header-menu {
+            max-width: 1370px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .row-1 {
+            float: left;
+            display: block;
+            width: 27%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .row-2 {
+            display: block;
+            width: 85%;
+            padding-left: 15px;
+        }
+        li {
+            float: left;
+            list-style: none;
+            padding-left: 71px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a:hover {
+
+            color: #0554a6;
+        }
+
+/***********************************Header-ends here*****************************************/
+        .for-background {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1600px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        .on-banner {
+            position: absolute;
+            margin: 0 auto;
+            top: 18%;
+            left: 8%;
+            background: white;
+            width: 38%;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .on-banner h2 {
+              font-weight: bold;
+              font-size: 45px;
+              color: #0554a6;
+          }
+        .on-banner p{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        input {
+            width: 68%;
+            padding: 10px 10px;
+            margin: 0 5px;
+        }
+        .four-para {
+            max-width: 1350px;
+            margin: 0 auto;
+            width: 100%;
+            overflow: hidden;
+        }
+        .item-1 {
+            width: 21%;
+            float: left;
+            padding: 27px;
+        }
+        .t2
+        {
+            padding: 10px;
+        }
+
+
+
+/***********************five images**********************************************/
+
+        .five-image {
+            width: 50%;
+            display: block;
+            float: left;
+            position: relative;
+        }
+        .data {
+            position: absolute;
+            top: 28%;
+            text-align: center;
+            left: 33%;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+        button {
+            padding: 9px 65px;
+            font-size: 20px;
+            background-color: #4896bf;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .five-image-2 {
+            width: 50%;
+            float: left;
+            display: block;
+            position: relative;
+        }
+
+
+        .data-1 {
+            position: absolute;
+            top: 20%;
+            font-size: 26px;
+            left: 10%;
+            font-weight: bold;
+            color: white;
+        }
+        .data-2 {
+            position: absolute;
+            top: 21%;
+            font-size: 26px;
+            left: 57%;
+            font-weight: bold;
+            color: white;
+        }
+        .data-3 {
+            position: absolute;
+            top: 68%;
+            font-size: 26px;
+            left: 8%;
+            font-weight: bold;
+            color: white;
+        }
+        .data-4 {
+            position: absolute;
+            top: 68%;
+            font-size: 26px;
+            left: 60%;
+            font-weight: bold;
+            color: white;
+        }
+
+        .class1 {
+            width: 50%;
+            float: left;
+            opacity: 0.5;
+            align-content: unset;
+        }
+
+        .slider-width
+        {
+            max-width: 1350px;
+            margin: 0 auto;
+        }
+
+        .slide {
+            display: block;
+            overflow: hidden;
+            clear: both;
+            background-color: #e4f5f5;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 auto;
+            width: 100%;
+            /* max-width: 1350px; */
+        }
+        /********************************men class******************************/
+        .four-men {
+            display: block;
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .men-width {
+            margin: 0 auto;
+            max-width:1350px;
+        }
+        .men-item {
+            width: 45%;
+            float: left;
+            padding: 30px;
+        }
+        .men-item h3
+        {
+          color: #0554a6;
+        }
+
+        .men-item img
+        {
+            width: 25%;
+            filter: grayscale(100%);
+
+        }
+/**************************************************auditing********************************************/
+
+        .auditing {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            background-color: #d3efef;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .auditing-width {
+            max-width: 1350px;
+            margin: 0 auto;
+        }
+        .auditng-item-1 button
+        {
+            color: #4896bf;
+            background-color: transparent;
+            border: 2px solid #4896bf;
+        }
+        .auditng-item-1 h1
+        {
+            font-size: 65px;
+        }
+        .auditng-item-1 h2
+        {
+            font-size: 35px;
+        }
+
+        .auditng-item-2 {
+            float: left;
+            width: 31.33%;
+            margin: 10px;
+            background-color: white;
+        }
+        .sub-item {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .sub-item h2 {
+           color: #03305d;
+            font-size: 25px;
+        }
+
+        /*************************credit*****************************/
+        .credentials {
+            margin: 0 auto;
+            max-width: 1350px;
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            padding-bottom: 50px;
+        }
+        .credentials h1 {
+         text-align: center;
+            padding: 25px;
+        }
+        /*************************business*****************************/
+
+        .business {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            background-color:#0a4376;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .business-width {
+            max-width: 1350px;
+            margin: 0 auto;
+        }
+        .business-width h1
+        {
+            color: white;
+        }
+        .business-item-2 {
+            width: 29.33%;
+            float: left;
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-left: 1px solid #cec1c1;
+        }
+
+        .business-item-2 img {
+            width: 50%;
+            border-radius: 120px;
+        }
+
+        .business-item-2 p {
+            padding-left: 60px;
+            padding-right: 62px;
+        }
+/***********************************footer*************************************/
+
+        .footer {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1600px;
+            overflow: hidden;
+        }
+        .footer img
+        {
+            width: 100%;
+            height: auto;
+        }
+        .footer-width {
+            max-width: 1350px;
+            margin: 0 auto;
+            width: 100%;
+            position: absolute;
+            top: 0%;
+            left: 1%;
+            padding: 6%;
+            color: white;
+            text-align: center;
+        }
+
+
+        .logo {
+            width: 25%;
+            float: left;
+        }
+
+       .logo li{
+           float: none;
+           padding: 13px;
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

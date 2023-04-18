@@ -1,0 +1,7 @@
+@media screen only (max-width: 350px){
+    body
+    {
+        display: none;
+    }
+
+}

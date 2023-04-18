@@ -1,0 +1,223 @@
+*
+{
+    box-sizing:border-box;
+    font-family: Raleway,Arial,Helvetica,sans-serif;
+}
+body.has-sidebar #content {
+    width: 100%;
+}
+h1.fusion-post-title {
+    font-size: 36px;
+    padding: 0px 15px;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+p.auth-heading {
+    font-size: 17px;
+    line-height: 1.9;
+    padding: 0px 0px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.fusion-text {
+    padding-left:18px;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 1.7;
+    text-align: left;
+    color: black;
+}
+
+.first-container h2 {
+    font-family: Raleway,Arial,Helvetica,sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ 
+}
+li {
+    font-size: 22px;
+    font-weight: 600;
+    color: #29282d;
+    padding: 3px;
+    margin-left: 20px;
+}
+.container {
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.container-2 {
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    margin-left:20px;
+}
+
+.fusion-text.head-top-banner {
+    height: 400px;
+    position: relative;
+    margin-bottom: 25px;
+    background-color: #aba3a3;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    background-position: 100% 100%;
+}
+h2.banner-heading   {
+    line-height: 1.5;
+    color: #050000;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    top: 36%;
+    width: 37%;
+}
+ol.sub-points {
+    line-height: 1.7;
+    padding-left: 2px;
+    list-style: none;
+    padding-bottom: 15px;
+}
+.sub-points li{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 2px;
+}
+.sub-points li::before {
+    content: '\2726';
+    color: #0090fa;
+    font-weight: 500;
+    position: relative;
+    right: 10px;
+ 
+}
+svg.svg-icon--caret.float-right {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.amp-accordion-content {
+    margin: 0 auto;
+    max-width: 1582px;
+    padding: 17px;
+}
+.i-amphtml-accordion-header {
+    cursor: pointer;
+    background-color: #efefef;
+    padding: 23px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #868e96;
+    border: 1px solid #dfdfdf;
+}
+amp-accordion>section[expanded]>:last-child {
+    padding-left: 6px;
+
+}
+ul.main-list {
+    list-style: none;
+}
+.sub-list-2 ul {
+    margin-left: 45px;
+    font-size: 18px;
+    padding: 2px;
+    font-weight: 100;
+
+}
+.sub-list-2 li
+{
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-weight: 100;
+    list-style: disc;
+    margin-left: 63px;
+}
+a {
+    color: black;
+    font-weight: 600;
+    font-size: 21px;
+}
+.fusion-fullwidth.fullwidth-box.contact-us.nonhundred-percent-fullwidth.non-hundred-percent-height-scrolling  {
+    max-width: 97%;
+    margin: 2% auto;
+    padding: 11px;
+    box-shadow: 0 4px 5px 5px #ccc;
+    overflow: auto;
+
+}
+.fusion-button.button-1 .fusion-button-text, .fusion-button.button-1 i {
+    padding: 16px 38px;
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    background-color: #0f81bb;
+    border: 2px solid #0a2e56cc;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.last-container {
+    float: left;
+    width: 64%;
+    text-align: center;
+    font-size: 28px;
+}
+.fusion-button-wrapper {
+    width: 30%;
+    float: right;
+    margin: 3% auto;
+}
+.service-text a{
+    color: #0f81bb;
+    font-weight: 600;
+    font-size: 28px;
+    font-style: italic;
+    border-bottom: 2px solid #0f81bb;
+}
+/*****media query*/
+@media only screen and (max-width: 767px) {
+    h2.banner-heading {
+        top: 6%;
+        width: 90%;
+        text-align: center;
+    }
+    .last-container {
+        width: 94%;
+    }
+    .fusion-button-wrapper {
+        width: 96%;
+        float: none;
+        text-align: center;
+    }
+    .container-2 {
+        width: 93%;
+        margin:0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

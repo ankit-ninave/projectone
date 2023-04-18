@@ -1,0 +1,36 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.top-box li {
+    width: 24%;
+    list-style: none;
+    margin-right: 1%;
+}
+
+.top-box {
+    background: gray;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/*start media queries*/
+@media only screen and  (max-width:767px) {
+    .top-box li {
+        width: 48%;
+        margin: 5px 1%;
+    }
+    .bottom-box li {
+        width: 100%;
+        margin: 1%;
+    }
+    .para-container {
+        padding: 15px 10px;
+    }
+    .data {
+        width: 100%;
+
+    }
+}

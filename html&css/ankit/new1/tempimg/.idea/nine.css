@@ -1,0 +1,18 @@
+h1
+{
+    text-align: center;
+}
+p
+{font-style:bold;
+    color:white;
+    background-color:blue;
+    border: solid;
+    border-color: #001563;
+    border-radius: 10px;
+    border-width: 5px;
+    border-height:2px;
+    height: 80px;
+    width: 900px;
+    padding: 45px 180px 100px 125px;
+
+}
