@@ -1,0 +1,661 @@
+
+                                                                   /////////////////////////////////////////////////
+                                                                   //                                             // 
+                                                                   //                                             //
+/////////////////////////////////////////////////////////////////////             IMPORTANT COMMAND               /////////////////////////////////////////////////////////////////////////////////////////////
+                                                                   //                                             //
+                                                                   //                                             //
+                                                                   /////////////////////////////////////////////////
+php -dmemory_limit=5G 
+
+1)php bin/magento setup:upgrade
+
+2)php bin/magento setup:deploy content
+
+3)php bin/magento setup:static-content:deploy
+
+4)php bin/magento cache:clean 
+
+5)php bin/magento cache:flush 
+
+php7.3 bin/magento s:up && php7.3 bin/magento s:d:c && php7.3 bin/magento s:s:d -f && php7.3 bin/magento c:c && php7.3 bin/magento c:f && chmod -R 777 var/ pub/static generated/
+
+perticular module
+
+php7.3 bin/magento mo:s Amasty_Amp 
+
+php bin/magento s:up
+php -dmemory_limit=5G bin/magento s:d:c
+php bin/magento s:s:d -f
+php bin/magento c:c
+php bin/magento c:f
+chmod -R 777 var/ pub/ generated
+/run this command
+
+php bin/magento index:reindex
+php bin/magento indexer:reset
+php bin/magento indexer:reindex
+php bin/magento s:up
+php bin/magento s:d:c
+php bin/magento s:s:d -f
+php bin/magento c:c
+php bin/magento c:f
+chmod -R 777 var/ pub/ generated/
+php bin/magento s:up && php bin/magento s:d:c && php bin/magento s:s:d -f && php bin/magento c:c && php bin/magento c:f && chmod -R 777 var/ pub/static generated/ 
+php bin/magento s:up && php bin/magento s:d:c && php bin/magento s:s:d && php bin/magento c:c && php bin/magento c:f && chmod -R 777 var/ pub/ 
+
+ php bin/magento c:c && php bin/magento c:f && chmod -R 777 var/ pub/ generated/
+
+************************************************************************************************ php target **************************************************************************************************
+
+php bin/magento s:up && php bin/magento s:d:c && php bin/magento setup:static-content:deploy -f en_GB en_US && php bin/magento c:c && php bin/magento c:f && chmod -R 777 var/ pub/static generated/
+
+
+php bin/magento s:up && php bin/magento s:d:c && php bin/magento setup:static-content:deploy -f en_GB en_US && php bin/magento c:c && php bin/magento c:f && chmod -R 777 var/ pub/static generated/
+
+************************************************************************************************ php 7.1 DBS **************************************************************************************************
+
+ php7.1 bin/magento s:up && php7.1 bin/magento s:d:c && php7.1 bin/magento s:s:d en_US es_ES -f && php7.1 bin/magento c:c && php7.1 bin/magento c:f && chmod -R 777 var/ pub/static/ generated/
+ 
+******************************************************************************************* php 7.3 ***********************************************************************************************************
+
+ php7.3 bin/magento s:up && php7.3 bin/magento s:d:c && php7.3 bin/magento s:s:d -f && php7.3 bin/magento c:c && php7.3 bin/magento c:f && chmod -R 777 var/ pub/static generated/
+
+********************************************************************************************** php 8.1 ********************************************************************************************************
+
+php8.1 bin/magento s:up && php8.1 bin/magento s:d:c && php8.1 bin/magento s:s:d -f && php8.1 bin/magento c:c && php8.1 bin/magento c:f && sudo chmod -R 777 var/ pub/static generated/
+
+*********************************************************************************** php 8.1 only for Perticular theme *****************************************************************************************
+
+php7.3 bin/magento s:up && php7.3 bin/magento s:d:c && php7.3 bin/magento s:s:d -f --theme Magento/frontend --theme Codazon/unlimited_default --theme Codazon/unlimited_supermarket && php7.3 bin/magento c:c && php7.3 bin/magento c:f  && chmod -R 777 var/ pub/ generated/
+
+****************************************************************************************************************************************************************************************************************
+
+search find somthing on commandline
+
+find ./ -type f -exec grep -l "['rel' => 'canonical']" {} +
+
+
+find ./ -type f -exec grep -l "products wrapper grid columns4 products-grid   " {} +
+
+php7.1 bin/magento mo:e Klarna_Core &&  php7.1 bin/magento mo:e Klarna_Ordermanagement &&  php7.1 bin/magento mo:e Klarna_Kp && php7.1 bin/magento mo:e Dotdigitalgroup_Email &&  php7.1 bin/magento mo:e Amazon_Core && php7.1 bin/magento mo:e Amazon_Login &&  php7.1 bin/magento mo:e Amazon_Payment &&  php7.1 bin/magento mo:e Magento_SampleData &&  php7.1 bin/magento mo:e Oscprofessionals_ProductReviewImport &&  php7.1 bin/magento mo:e Magento_SendFriend &&  php7.1 bin/magento mo:e Magento_Signifyd 
+
+
+grep "Magecomp\Gstcharge\Model\Source\Percentage" app/ -rsn
+
+
+****************************************************************************************************************************************************************************************************************
+
+check server size files
+du -sh *   
+
+extract zip forcefully
+tar -xf pub.tar.gz 
+
+tar -xvf pub.tar.gz 
+
+
+****************************************************************************************************************************************************************************************************************
+
+How to enable or disable the static content signing?
+
+php bin/magento config:set dev/static/sign 0
+
+****************************************************************************************************************************************************************************************************************
+
+
+check how many php version runing in magento
+sudo update-alternatives --config php
+(Set php version)
+sudo update-alternatives --set php /usr/bin/php7.4  
+
+****************************************************************************************************************************************************************************************************************
+
+redis-cli -h 127.0.0.1 FLUSHALL
+
+****************************************************************************************************************************************************************************************************************
+
+ php bin/magento c:c 
+ php bin/magento c:f 
+ php bin/magento cache:status
+ php bin/magento c:d full_page
+
+****************************************************************************************************************************************************************************************************************
+
+service elasticsearch status
+service elasticsearch start
+service elasticsearch stop
+
+****************************************************************************************************************************************************************************************************************
+
+service varnish restart
+
+****************************************************************************************************************************************************************************************************************
+
+https://m2release.efuma.com/?templatehints=magento
+
+****************************************************************************************************************************************************************************************************************
+ bin/magento config:set dev/css/use_css_critical_path 1
+ bin/magento config:set dev/css/use_css_critical_path 0
+
+****************************************************************************************************************************************************************************************************************
+
+service php-fpm status
+
+service httpd status
+
+service nginx stop
+
+service php-fpm stop
+
+service httpd start
+
+****************************************************************************************************************************************************************************************************************
+Permission commands
+
+chown musikshack.com:musikshack.com log
+chown ankitn:ankitn html
+chmod -R 777 Swissup/*                                                       //permission for perticular directory
+chmod -R 777 var/* pub/*
+chmod -R 777 var/* pub/* var/view_preprocessed/
+chown -R mygetwell:mygetwell .
+chmod -R 755 var/ pub/ generated/*
+
+****************************************************************************************************************************************************************************************************************
+Basic Merging 
+
+php -f bin/magento config:set dev/js/merge_files 0
+php -f bin/magento config:set dev/js/merge_files 1
+
+****************************************************************************************************************************************************************************************************************
+Basic bundling 
+php -f bin/magento config:set dev/js/enable_js_bundling 0
+php -f bin/magento config:set dev/js/enable_js_bundling 1
+
+***************************************************************************************** Cache is Runing*****************************************************************************************************
+
+grep --recursive -l 'cacheable="false"'
+
+****************************************************************************************************************************************************************************************************************
+
+crontab -l
+
+****************************************************************************************************************************************************************************************************************
+
+Host set in Linux
+
+sudo nano /etc/hosts
+
+****************************************************************************************************************************************************************************************************************
+
+Module dependancies
+
+bin/magento info:dependencies:show-modules
+
+****************************************************************************************************************************************************************************************************************
+
+6)For giving permission to three folders:-
+chmod -R 777 var/pub/generated
+
+7)To enable debug logging for the current mode:-
+bin/magento setup:config:set --enable-debug-logging=true
+
+AFTER ENABLE FLUSH THE CACHE
+
+* bin/magento cache:flush
+
+8)To disable debug logging for the current mode:-
+bin/magento setup:config:set --enable-debug-logging=false
+
+AFTER ENABLE FLUSH THE CACHE
+
+* bin/magento cache:flush
+
+9)To enable database logging
+
+To enable or disable database logging.
+
+* bin/magento dev:query-log:enable
+* bin/magento dev:query-log:disable
+* Flush the cache.
+
+AFTER ENABLE FLUSH THE CACHE
+
+* bin/magento cache:flush
+
+10)To view the cache status
+
+* bin/magento cache:status
+
+11)Enable or Disable cache
+
+* bin/magento cache:enable [type] ... [type]
+
+* bin/magento cache:disable [type] ... [type]
+
+12)imp command for giving system permission
+
+** chown -R magento234:magento234
+
+* pwd shows in which folder we're in.
+
+13)Imp command when error occoured:-
+
+- There has been an error processing your request
+
+- Exception printing is disabled by default for security reasons.
+
+- Error log record number: 4849b89e31da2f856854d6d4a5d75de66dc4d30bbd7e939cfe961268a3e1d384
+
+* cat var/report/id(which appears when error appeared)
+
+****************************************************************************************************************************************************************************************************************
+
+db log
+bin/magento --include-all-queries=true --include-call-stack=true dev:query-log:enable
+bin/magento dev:query-log:disable
+with stack
+
+bin/magento --include-all-queries=true --include-call-stack=false dev:query-log:enable
+
+
+bin/magento dev:query-log:enable
+bin/magento dev:query-log:disable
+without stack
+
+****************************************************************************************************************************************************************************************************************
+
+apt install htop
+
+top & htop in command linux
+
+Process kill 
+
+kill processname 
+
+****************************************************************************************************************************************************************************************************************
+
+14)magento 2 login details
+
+php bin/magento admin:user:create
+
+php bin/magento admin:user:create --admin-user="developer" --admin-password="developer@456" --admin-email="ankitn@oscprofessionals.in" --admin-firstname="ankit" --admin-lastname="mina"
+php bin/magento admin:user:create --admin-user="harshad" --admin-password="developer456" --admin-email="harshad@oscprofessionals.in" --admin-firstname="dev" --admin-lastname="mina"
+
+php bin/magento7.1 admin:user:create --admin-user="ankit" --admin-password="developer@456" --admin-email="ankitnn@oscprofessionals.in" --admin-firstname="ankitnn" --admin-lastname="opti"
+
+
+15)When we run this command ->
+
+composer require --dev mage2tv/magento-cache-clean
+
+It will ask you for Authenetication required-
+
+Username is- Public Key: c7af1bfc9352e9c986637eec85ed53af
+Password is- Private Key: 17e1b72ea5f0b23e9dbfb1f68dc12b53
+
+16)Magento 2 Cache Clean
+
+To enable debug logging use setup:config:set command:-
+
+* bin/magento setup:config:set --enable-debug-logging=true
+
+* bin/magento cache:flush
+
+To enable database logging
+
+* bin/magento dev:query-log:enable
+
+To enable syslog logging
+
+* bin/magento setup:config:set --enable-syslog-logging=true
+
+* bin/magento cache:flush
+
+****************************************************************************************************************************************************************************************************************
+
+to make zip on cmder by akhilesh sir
+
+tar -cvpzf code.tar.gz code/
+
+r sir
+tar -cvzf magento.tar.gz 
+
+****************************************************************************************************************************************************************************************************************
+
+check mysql version 
+mysql -V
+
+
+elastic version check
+http://localhost:9200
+
+tar -cvzf Amasty.tar.gz 
+
+****************************************************************************************************************************************************************************************************************
+
+Magento modes
+      deploy:mode:set                    
+      deploy:mode:show                   
+      indexer:set-dimensions-mode        
+      indexer:set-mode                   
+      indexer:show-dimensions-mode       
+      indexer:show-mode 
+bin/magento deploy:mode:show
+bin/magento deploy:mode:set production
+bin/magento deploy:mode:set developer
+bin/magento deploy:mode:set default
+
+****************************************************************************************************************************************************************************************************************
+
+ Docker magento
+ docker ps
+ docker start voylite-upgrade_mysqldb_1
+ docker stop voylite-upgrade_mysqldb_1
+
+docker ps
+root@ankitn-ThinkCentre-M80:/var/www/vhost/skinit-upgrade/htdocs# ls
+app               bin            composer.json.bak  dev              generated                 lib              LICENSE.txt  n98-magerun2.phar    php.dev.ini  README_EE.md  SECURITY.md  var
+auth.json         CHANGELOG.md   composer.lock      docker-sync.yml  grunt-config.json.sample  LICENSE_AFL.txt  mutagen.sh   nginx.conf.sample    phpserver    README.md     setup        vendor
+auth.json.sample  composer.json  COPYING.txt        fonts            Gruntfile.js.sample       LICENSE_EE.txt   mysql.yaml   package.json.sample  pub          robots.txt    update
+
+docker-compose -f mysql.yaml up -d
+
+composer Rollback
+composer self-update 1.10.0
+
+****************************************************************************************************************************************************************************************************************
+
+php bin/magento dev:template-hints:enable 
+php bin/magento dev:template-hints:disable 
+
+*******************************************************************************************************************************************************************
+locate .sql
+*********************************************
+
+To install node-js
+
+16)yum install -y gcc-c++ make
+
+17)curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
+
+18)16)yum -y install nodejs
+19)npm install -g grunt-cli
+20)mv package.json.sample package.json
+21)mv Gruntfile.js.sample Gruntfile.js
+22)npm install
+23)npm update
+
+************************************************************************************************************************************************************************
+clear history
+history -c
+ w command – Shows information about the users currently on the machine, and their processes.
+    who command – Display information about users who are currently logged in.
+    users command – See the login names of the users currently on the system, in sorted order, space separated, on a single line. It reads all information from /var/run/utmp file.
+
+history -d 4        delete perticular line command from history
+OR
+history -c && history -w
+
+
+To clear the bash history completely on the server, open terminal and type
+cat /dev/null > ~/.bash_history
+
+
+****************************************
+
+Enable Query Logging for Magento 2.2 and higher
+
+ Execute in SSH, in the Magento 2 root:
+
+bin/magento --include-all-queries=true --include-call-stack=true dev:query-log:enable
+bin/magento --include-all-queries=true --include-call-stack=false dev:query-log:enable
+
+bin/magento dev:query-log:disable
+
+****************************************************************************************************************************************************************************************************************
+
+check Elastic search version
+curl -XGET 'http://localhost:9200'
+curl  'http://localhost:9200'
+
+docker run -d -p 127.0.0.1:9200:9200 -p 127.0.0.1:9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.9.3
+
+****************************************************************************************************************************************************************************************************************
+Use the following command to check the current search engine:
+
+bin/magento config:show catalog/search/engine
+
+****************************************************************************************************************************************************************************************************************
+
+To install n98
+
+composer info
+ It is used to manage the Magento components and their dependency. Composer allows us to declare the libraries on which our project depends, and it will also manage install/update for us.
+
+24)To Increse memory limit
+COMPOSER_MEMORY_LIMIT=-1 composer update
+ 
+
+php -dmemory_limit=5G bin/magento s:up
+php -dmemory_limit=5G bin/magento s:d:c
+php -dmemory_limit=5G bin/magento setup:static-content:deploy -f
+
+
+
+php -dmemory_limit=5G composer update
+ php -dmemory_limit=5G composer remove magento/module-bundle
+                       composer self-update 1.10.0
+
+****************************************************************************************************************************************************************************************************************
+
+        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/requehars.log');
+        $logger = new \Zend\Log\Logger();
+        $logger->addWriter($writer);
+        $logger->info("hiiiiiiii");
+        $logger->info($request);
+        $logger->info("byyeeeee");
+
+
+        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/modelvalueId.log');
+        $logger = new \Zend\Log\Logger();
+        $logger->addWriter($writer);
+        $logger->info(__LINE__ . print_r($modelValueIds, true));
+
+
+        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/Samextend.log');
+        $logger = new \Zend\Log\Logger();
+        $logger->addWriter($writer);
+        $debugBackTrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
+        foreach ($debugBackTrace as $item) {
+        $logger->info(@$item['class'] . @$item['type'] . @$item['function']);
+        }
+
+        
+        $writer = new \Zend_Log_Writer_Stream(BP . '/var/log/EfumaCollection.log');
+        $logger = new \Zend_Log();
+        $logger->addWriter($writer);
+        return $logger->info($message);
+        
+
+********************************************************************************************** GIT BEGAINS ****************************************************************************************************
+SSH Key Path 
+command -------   
+
+ankitn@ankitn-ThinkCentre-M80:~$ cd /home/ankitn/.ssh/
+ankitn@ankitn-ThinkCentre-M80:~/.ssh$ ls
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+ankitn@ankitn-ThinkCentre-M80:~/.ssh$ cat id_rsa.pub                                                                          //file name
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFOdMfiJ3ml7o4hPZpKVFJsovQr5yuyMjqn+Qxz3aNmW42UxdkOde3NSxMPSBgIK1EOiuwVF4HFooq2g2etLoYnhemjvE5RnW3B8YPzG2EYvA73rDVbW+EyI2+4zPFUsIeYohGPw8+KcWzOTFfj12BLcgSTH16mbjN+I9WzxdbIiv+O9z/oHyXIPxOTw9rNz5lDrgeVHkJa57MxVyAWfPJDh4+pRN8ST5Zlr/7I9fLrH32So86mEcRiZ/FRVNuYMpR7XRlgmES+8VUo7VeLTaviJHkoYVo5d2jYeGRmcil7el09z9dNVIx/6Z+OWELBEOReU2/pC1T+ECNRHyc5l3b7zBg4QEN5oKRmNoG679IKUPOkjDhO1INgbPUXIpgc49VKWq4QBErApGgMRG/j5raaN9rVfqtyaqHu+AT13U2h0yUVo9KjxlZu1FK+a4+ircuf1EUVOSyWwJ77yWBAnuxZqhKsyZRz0nFNYvWNVUrYZfN10t3onSJ1r2+WNVeoAc= ankitn@ankitn-ThinkCentre-M80
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+connect to git hub Accoun(browser)
+
+command ------ssh -T git@github.com                                                                                    //connect to git hub Accoun(browser)
+                                                                                
+
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts$ ssh -T git@github.com
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,20.207.73.82' (ECDSA) to the list of known hosts.
+Hi anikitn! You've successfully authenticated, but GitHub does not provide shell access.
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts$ git clone git@github.com:oscdev/royimaging-live.git
+Cloning into 'royimaging-live'...
+remote: Enumerating objects: 21230, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 21230 (delta 2), reused 6 (delta 2), pack-reused 21223
+Receiving objects: 100% (21230/21230), 53.41 MiB | 7.57 MiB/s, done.
+Resolving deltas: 100% (5073/5073), done.
+Updating files: 100% (14983/14983), done.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+command ------ ls -tlr                                                                                                   //list view of files & folders
+
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts$ ls -tlr
+total 8
+drwxrwxr-x  4 ankitn ankitn 4096 Jul 13 17:47 indusroof.local
+drwxrwxr-x 11 ankitn ankitn 4096 Sep  2 17:04 royimaging-live
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts$ cd royimaging-live/
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+command ------git branch                                                                                                 //to check no of branches
+
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts/royimaging-live$ git branch
+* RoyRtagging
+  main
+  staging
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+command -------git checkout -b (branchname)                                                                               //create new branch 
+
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts/royimaging-live$ git checkout -b RoyRtagging
+Switched to a new branch 'RoyRtagging'
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+command -------git checkout (branchname)                                                                                 //Switch to another branch  
+ex:-
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts/royimaging-live$ git checkout RoyRtagging
+Switched to branch 'RoyRtagging'
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+command -------git pull origin main                                                                                       //Pull code from main branch
+
+ankitn@ankitn-ThinkCentre-M80:/var/www/vhosts/royimaging-live$ git pull origin main
+From github.com:oscdev/royimaging-live
+ * branch              main       -> FETCH_HEAD
+Already up to date.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+****************************************************************************************************************************************************************************************************
+/var/www/vhosts/www.freshpikk.com/vendor/magento/module-elasticsearch-7/SearchAdapter
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\vendor\magento\module-elasticsearch-7\SearchAdapter\fromsite\
+
+/var/www/html/magento241.local/htdocs/pub/static/frontend/Magento/luma/en_US/mage
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\magento-2.3.5\vendor\magento\module-elasticsearch-7\SearchAdapter\                                            new
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\vendor\magento\module-elasticsearch-7\SearchAdapter\                                                old
+
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\app\code\Webkul\ElasticSearch\Model\Adapter\freshpikk_webkul\
+
+
+
+
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\vendor\magento\module-elasticsearch-7\Model\Client\16_08_21_predev3\backup_dev3\
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\vendor\magento\module-elasticsearch-7\Model\Client\
+
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\app\code\Webkul\ElasticSearch\Model\Adapter\
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\app\code\Webkul\ElasticSearch\Model\Adapter\ adding log for frespikk_webkul  
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\vendor\magento\module-elasticsearch-7\Model\Client\     for in elastic search 7 --no logs where generated
+
+
+
+
+
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\vendor\magento\module-elasticsearch-7\SearchAdapter\ ----Adapter.php 
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\vendor\magento\module-elasticsearch-7\Model\Client\ ----Elasticsearch.php
+
+
+
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\freshpikk\app\code\webkul\elasticSearch\Model\Adapter\  ---ElasticAdapter.php
+
+.
+20_08_2021
+D:\AnkitnN\AnkitN_2021\Magento_Works\westlake\Taxjar\SalesTax\Model\Tax\
+/chroot/home/ab967cfc/westlake-design.com/html/app/code/Taxjar/SalesTax/Model/Tax
+
+
+D:\AnkitnN\AnkitN_2021\Magento_Works\westlake\Taxexempt\Model\Plugin\
+
+
+----------------------
+20_08_2021
+
+
+/var/www/vhosts/m2release/app/code/Oscprofessionals/CustomerPricesOverride/Helper
+
+
+
+Fatal error: Cannot declare class Oscprofessionals\Samextend\Scroll\Plugin\Framework\Controller\ResultInterfacePlugins, because the name is already in use in /var/www/vhosts/optimization.efuma.com/app/code/Oscprofessionals/Samextend/Plugin/Framework/Controller/ResultInterfacePlugin.php on line 22
+
+
+----------------------------------16022022-------------------------------------
+
+Amasty_Acart Amasty_Base Amasty_CronScheduleList Amasty_CrossLinks Amasty_Geoip Amasty_Mage24Fix Amasty_Meta Amasty_SeoHtmlSitemap Amasty_SeoToolKit Amasty_SeoSingleUrl Amasty_SeoRichData Amasty_VisualMerch Amasty_VisualMerchCore Amasty_VisualMerchUi Amasty_XmlSitemap Apptrian_FacebookPixel Faonni_SmartCategory Ibnab_OneSku Lillik_PriceDecimal Lof_All Lof_ProductTags Lof_ProductTagsGraphQl Lof_Setup Magecomp_Limitquantityperproduct Magefan_Community Magefan_Blog Mageplaza_Ajaxnav Mageplaza_Core Mageplaza_CronSchedule Mageplaza_GoogleTagManager Mageplaza_Smtp Magepow_Recentorder Mgt_DeveloperToolbar Mirasvit_Core Mirasvit_Dashboard Mirasvit_Report Mirasvit_ReportBuilder Mirasvit_Reports OlegKoval_RegenerateUrlRewrites Oscprofessionals_CatalogImportExport Oscprofessionals_DealsPageCreator Oscprofessionals_MobileApi PL_Benefit PL_Mpgs Storedefault_HideDefaultStoreCode Webkul_Customization Webkul_DeliveryBoy Webkul_GoogleShoppingFeed Webkul_Limitquantityperproductforapp Webkul_Marketplace Webkul_MobikulMp Webkul_MarketplaceCommission WeltPixel_Backend WeltPixel_GoogleCards WeltPixel_GoogleTagManager WeSupply_Toolbox
+
+
+
+
+
+
+-----------------03102022----------------------
+
+
+php7.1 bin/magento mo:d Klarna_Ordermanagement && php7.1 bin/magento mo:d Klarna_Kp && php7.1 bin/magento mo:d Klarna_Core 
+php7.1 bin/magento Amazon_Payment && php7.1 bin/magento Amazon_Login && php7.1 bin/magento Amazon_Core  
+
+
+
+/etc/init.d/varnish status
+ 1891  /etc/init.d/nginx status
+ 1892  /etc/init.d/nginx restart
+ 1893  /etc/init.d/varnish restart
+ 1894  /etc/init.d/php7.2-fpm restart
+
+
+/etc/init.d/varnish status
+ 1891  /etc/init.d/nginx status
+ 1892  /etc/init.d/nginx restart
+ 1893  /etc/init.d/varnish restart
+ 1894  /etc/init.d/php7.2-fpm restart
+ 1895  cd /var/www/vhosts/
+ 1896  ll
+ 1897  cd targetpublications.org/
+ 1898  ll
+ 1899  cd htdocs/
+ 1900  ll
+
+
+
+
+php bin/magento mo:d Magento_AdobeIms Magento_Amqp Magento_BundleImportExport Magento_GroupedImportExport Magento_GroupedProductGraphQl
