@@ -1,0 +1,111 @@
+*
+{
+  box-sizing: border-box;
+}
+.boss{
+    margin: 0;
+    padding:0;
+}
+.image
+{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.image img
+{
+ width: 100%;
+
+}
+.image h1
+{
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+}
+.image p
+{
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+.wrapper {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/*for container 1*/
+.container
+{
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.box img
+{
+    padding-top: 75px;
+}
+.box {
+    width: 29.33%;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #ffffff;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+.box1{
+    background-color: #00ccff;
+}
+.box2
+{
+    background-color: #42f5c8;
+}
+.box3{
+    background-color: #f56942;
+}
+.box4{
+    background-color: #42f563;
+}
+.box5
+{
+background-color: #6c42f5;
+}
+.last
+{
+   background-color: black;
+    color: white;
+    text-align: center;
+}
+.last b{
+    color: red;
+}
+
+/*media query*/
+@media screen and (max-width:1024px) {
+.image
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+}
+@media screen and (max-width: 768px) {
+
+
+.box
+{
+    width: 83.33%;
+
+}
+}

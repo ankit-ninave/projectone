@@ -1,0 +1,150 @@
+*
+{
+    box-sizing:border-box;
+    font-family: Raleway,Arial,Helvetica,sans-serif;
+}
+body.has-sidebar #content {
+    width: 100%;
+}
+h1.fusion-post-title {
+    font-size: 36px;
+    padding: 0px 26px;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+p.auth-heading {
+    font-size: 17px;
+    line-height: 1.9;
+    padding: 0px 0px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.fusion-text {
+    padding-left:28px;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 1.7;
+    text-align: left;
+    color: black;
+}
+
+.first-container h2 {
+    font-family: Raleway,Arial,Helvetica,sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-top: 20px;
+ 
+}
+li {
+    font-size: 22px;
+    font-weight: 600;
+    color: #29282d;
+}
+.container {
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.container-2 {
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid black;
+    margin-left:38px;
+}
+
+.fusion-text.head-top-banner {
+    height: 400px;
+    position: relative;
+    margin-bottom: 25px;
+    background-color: #aba3a3;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    background-position: 100% 100%;
+}
+h2.banner-heading   {
+    line-height: 1.5;
+    color: #050000;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    top: 36%;
+    width: 37%;
+}
+ol.sub-points {
+    line-height: 1.7;
+    padding-left: 2px;
+    list-style: none;
+}
+.sub-points li{
+      font-size: 18px;
+    font-weight: 500;
+}
+.sub-points li::before {
+    content: '\2726';
+    color: #0090fa;
+    font-weight: 500;
+    position: relative;
+    right: 10px;
+ 
+}
+
+.amp-accordion-content {
+    margin: 0 auto;
+    max-width: 1526px;
+    padding: 17px;
+}
+.i-amphtml-accordion-header {
+    cursor: pointer;
+    background-color: #efefef;
+    padding: 23px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    border: 1px solid #dfdfdf;
+}
+amp-accordion>section[expanded]>:last-child {
+    display: block!important;
+    padding-left: 32px;
+
+}
+.sub-list-2 ul {
+    margin-left: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sub-list-2 li
+{
+    font-size: 18px;
+    padding: 2px;
+    font-weight: 100;
+    list-style: none;
+}
+.sub-list-2 a {
+    color: black;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

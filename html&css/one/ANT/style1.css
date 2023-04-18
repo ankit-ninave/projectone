@@ -1,0 +1,837 @@
+*{
+    box-sizing: border-box;
+}
+.wrap
+{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1600px;
+}
+.header
+{
+    text-align: center;
+    padding: 4px;
+    display: block;
+    overflow: hidden;
+    background-color: red;
+    float: left;
+    width: 33.33%;
+    padding-left: 7%;
+}
+.header li{
+    list-style-type: none;
+    float: left;
+    padding-left: 6px;
+}
+.header a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo1
+{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 33.33%;
+}
+.logo2
+{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 33.33%;
+}
+.logo2 a
+{
+    background: -webkit-linear-gradient(left, #EFDD21, #FEC521);
+    color: #464646;
+    font-weight: normal;
+    text-decoration: none;
+    float: left;
+    font-size: 12px;
+    padding-right:7px ;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+.logo2 input
+{
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: lightgray;
+    border: none;
+    padding : 6px 208px 4px 35px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo3 p
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10.2px;
+    color: #ababab; ;
+}
+.logo3 select
+{
+    padding-right: 71px;
+    color: #a2a2a2;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.logo3
+{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 33.33%;
+}
+.ssb
+{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #464646;
+    float: left;
+    width: 50%;
+    padding-left: 10%;
+}
+.ssb li
+{
+    float: left;
+    list-style-type: none;
+    padding-left: 15px;
+}
+.ssb a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.ssb a:hover
+{
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.day-to-day
+{
+    float: left;
+    background-color: red;
+    width: 25%;
+    padding: 1%;
+    padding-left: 10%;
+}
+.personal-guidance
+{
+    float: left;
+    background-color: red;
+    width: 25%;
+    padding: 1%;
+}
+.tpd78
+{
+    float: left;
+    background-color: red;
+    width: 25%;
+    padding: 1%;
+}
+.quality
+{
+    float: left;
+    background-color: red;
+    width: 25%;
+    padding: 1%;
+}
+
+.brus-banner {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.brus-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.brus-banner .btn {
+    position: absolute;
+    top: 81%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.brus-banner .btn2 {
+    position: absolute;
+    top: 81%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.four-images li
+{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    float: left;
+
+}
+.four-images
+{
+    width: 100%;
+    padding-left: 15%;
+}
+.three-buttons button
+{
+    text-decoration: none;
+    background-color: #fe002f;
+    border: none;
+    padding: 29px 70px 29px 60px ;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-left: 11px;
+    color: #FFFFFF;
+}
+.three-buttons li
+{
+    list-style-type: none;
+}
+.three-buttons
+{
+    padding-left: 15%;
+}
+
+.three-buttons button:hover
+{
+    background-color: red;
+}
+.firstclass11 ul{
+    text-align: center;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    float: left;
+
+}
+.firstclass11 img
+{
+   padding: 45px;
+}
+.shadow
+{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px -2px;
+
+}
+.firstclass11
+{
+    padding-left: 5%;
+}
+.firstclass11 a
+{
+    background-color: #f7f7f7;
+    color: green;
+    text-decoration: none;
+    text-align: center;
+}
+
+.strip {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: -webkit-linear-gradient(left, rgb(254, 0, 47), rgb(223, 0, 66), rgb(213, 0, 72));
+    border-radius: 5px;
+}
+
+article {
+    background-color: #f7f7f7;
+    padding: 118px;
+    margin: 15px 10%;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    font-weight: normal;
+    color: #303030;
+    align-content: center;
+
+}
+h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.all-brands
+{
+    text-align: center;
+    padding: 4px;
+    display: block;
+    overflow: hidden;
+    background-color: red;
+    float: left;
+    width: 33.33%;
+
+
+}
+.all-brands li{
+    list-style-type: none;
+    float: left;
+    padding-left: 6px;
+}
+.all-brands a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.common
+{
+    padding-left: 10%;
+    background-color: black;
+}
+.brand-header2 li
+{
+    float: left;
+}
+.brand-header li{
+
+    padding-left:5px;
+    float: left;
+
+}
+.brand-header2
+{
+
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 10%;
+}
+.brand-header2 li{
+
+    padding-left:5px;
+}
+
+.brand-header3
+{
+
+
+    padding: 14px 10%;
+}
+.brand-header3 li{
+    display: inline-flex;
+    padding-left:5px;
+}
+
+.div1
+{
+    background: linear-gradient(90deg,red 19%,black 0%);
+
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 ul{
+    margin-left: 7%;
+    color: #FFFFFF;
+
+
+}
+
+
+.div1 form
+{
+    border-bottom: 2px solid white;
+    margin-left: 26%;
+}
+
+.div1 input
+{
+    padding: 12px;
+    border-style: none;
+}
+.div1 button
+{
+    padding: 12px;
+    background-color: red;
+    border-style: none;
+    color: white;
+}
+
+h2
+{
+    padding-left: 5%;
+    padding-top: 10px;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+
+.footerlogo
+{
+
+    background-color:  #464646;
+    align-items: baseline;
+    border-bottom: 1px solid #9b9b9b;
+    color: #9b9b9b;
+    padding: 10px 12%;
+}
+.footerlogo li
+{
+    padding-left: 3%;
+}
+
+.footer-container {
+    background: #464646;
+    padding: 40px 11%;
+    width: 100%;
+}
+
+
+
+.data {
+    width:33.33%;
+    flex-wrap: wrap;
+    padding: 20px;
+    list-style:none;
+}
+.data li {
+    padding: 8px 0;
+    list-style-type: none;
+}
+.data li a {
+    text-decoration: none;
+    color: #A8A8A8;
+}
+.data h4 {
+    color: white;
+}
+
+.payment-line h5{
+
+    color:#9b9b9b;
+    padding-left: 6px;
+    padding-top: 25px;
+}
+.payment li
+{
+    padding: 10px;
+    cursor: pointer;
+}
+.payment
+{
+    display: flex;
+}
+
+
+
+/*
+.nav
+{
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: blue;
+}
+
+.nav li
+{
+    list-style-type: none;
+    padding: 20px;
+    float: left;
+}
+
+.nav a
+{
+    text-decoration: none;
+    color:white;
+}
+
+.data
+{
+      width: 31%;
+      float: left;
+      display: block;
+      overflow: hidden;
+      margin: 1%;
+      clear:right;
+      background-color: #888888;
+}
+.top-box li {
+    width: 24%;
+    list-style: none;
+    display: inline-flex;
+
+}
+.top-box {
+    background: gray;
+    display: block;
+    overflow: hidden;
+}
+@media only screen and  (max-width:375px) {
+    .top-box li {
+        width: 48%;
+        margin: 5px 1%;
+    }
+    .header {
+        width: 100%;
+    }
+    .nav
+    {
+        width: 100%;
+    }
+    .bottombox
+    {
+        width: 100%;
+    }
+}
+*****************
+
+/* MEDIA QUERY
+@media screen and (max-width: 375px) {
+    body {
+
+        min-height: 667px;
+        width: 100%;
+
+
+    }
+    .data {
+        width: 100%;
+
+    }
+    .head-links
+    {
+        display: none;
+    }
+    .tpd a{
+        display: none;
+    }
+    .tpd form
+    {
+        width: 50%;
+    }
+    .tpd2 li
+    {
+        display: none;
+    }
+    .banner img{
+        width: 462px;
+        height: 328px;
+        position: relative;
+    }
+    .button1
+    {
+
+        padding: 6px;
+        position: absolute;
+        top: 636px;
+        left: 99PX;
+
+    }
+    .button2
+    {
+
+        padding: 6px;
+        top: 636px;
+        left: 197px;
+        position: absolute;
+
+
+    }
+
+
+    .head-links2{
+        display: none;
+    }
+    .three-buttons
+    {
+        display: none;
+    }
+    .nordi-banner
+    {
+        display: none;
+    }
+
+    .firstclass11{
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+    .firstclass13
+    {
+        flex-wrap:wrap;
+        display: flex;
+    }
+    .strip{
+        display: none;
+    }
+    .eight-brands
+    {
+        display: none;
+    }
+    .brand-header
+    {
+        display: none;
+    }
+    .navcontainer
+    {
+        flex-wrap:wrap;
+        display: flex;
+    }
+    article
+    {
+
+        padding: 35px;
+        margin: 1px 1%;
+
+    }
+    header{
+        background-color: red;
+    }
+    .four-images img
+    {
+        height: 191px;
+        width: 171px;
+        flex-direction: column;
+
+    }
+    .div1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footerlogo
+    {
+        flex-direction: column;
+    }
+    .footerlogo2
+    {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+/*
+********************************
+.firstclass13 a
+{
+    background-color: #f7f7f7;
+    color: green;
+    text-align: center;
+}
+.firstclass13 img
+{
+    padding-left: 38px;
+}
+.firstclass13 ul
+{
+    border: 0.5px solid ghostwhite;
+    padding: 16px;
+    box-shadow: 5px 0px 1px -4px whitesmoke;
+}
+article {
+    background-color: #f7f7f7;
+    padding: 118px;
+    margin: 15px 10%;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center;
+    font-weight: normal;
+    color: #303030;
+    align-content: center;
+
+}
+h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.brand-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:red;
+    border-radius: 3px;
+    color: #FFFFFF;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 14px 1%;
+}
+.brand-header li{
+    display: inline-flex;
+    padding-left:5px;
+}
+.brand-header2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 10%;
+}
+.brand-header2 li{
+    display: inline-flex;
+    padding-left:5px;
+}
+
+.brand-header3
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 10%;
+}
+.brand-header3 li{
+    display: inline-flex;
+    padding-left:5px;
+}
+
+.div1
+{
+    background: linear-gradient(90deg,red 19%,black 0%);
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 ul{
+    margin-left: 7%;
+    color: #FFFFFF;
+
+
+}
+
+
+.div1 form
+{
+    border-bottom: 2px solid white;
+    margin-left: 26%;
+}
+
+.div1 input
+{
+    padding: 12px;
+    border-style: none;
+}
+.div1 button
+{
+    padding: 12px;
+    background-color: red;
+    border-style: none;
+    color: white;
+}
+
+h2
+{
+    padding-left: 10%;
+    padding-top: 10px;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+
+.footerlogo
+{
+    display: flex;
+    background-color:  #464646;
+    align-items: baseline;
+    border-bottom: 1px solid #9b9b9b;
+    color: #9b9b9b;
+    padding: 10px 12%;
+}
+.footerlogo li
+{
+    padding-left: 3%;
+}
+
+.footer-container {
+    background: #464646;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 40px 11%;
+    width: 100%;
+}
+
+
+
+.data {
+    width:33.33%;
+    flex-wrap: wrap;
+    padding: 20px;
+    list-style:none;
+}
+.data li {
+    padding: 8px 0;
+    list-style-type: none;
+}
+.data li a {
+    text-decoration: none;
+    color: #A8A8A8;
+}
+.data h4 {
+    color: white;
+
+}
+
+.payment-line h5{
+
+    color:#9b9b9b;
+    padding-left: 6px;
+    padding-top: 25px;
+}
+.payment li
+{
+    padding: 10px;
+    cursor: pointer;
+}
+.payment
+{
+    display: flex;
+}
+

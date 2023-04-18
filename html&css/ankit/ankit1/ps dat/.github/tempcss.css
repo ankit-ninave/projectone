@@ -1,0 +1,115 @@
+*
+{
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+}
+.head
+{
+    background: -webkit-linear-gradient(left, rgb(254, 0, 47),rgb(223, 0, 66), rgb(213, 0, 72));
+    margin: -8px;
+    height: 33px;
+    box-sizing: border-box;
+}
+#phone1
+{
+    background-repeat: no-repeat;
+    margin-left: 180px;
+}
+.no {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: white;
+    font-weight:normal;
+    padding: 5px;
+    margin-left: 0px;
+    margin-right: 300px;
+}
+a
+{
+    color: white;
+    display: inline;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#login
+{
+    margin-left: 260px;
+    font-size: 13px;
+    color: #FFFFFF ;
+    padding-right: 5px;
+}
+#login1
+{
+    margin-left: -6px;
+    font-size: 13px;
+}
+.tdp
+{
+    display: inline-block;
+    background: -webkit-linear-gradient(left, #EFDD21,#FEC521);
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto';
+    color: #464646;
+    font-weight:normal;
+    font-size: 14px;
+    height: 30px;
+    width:596px;
+    padding:5px  10px ;
+    margin-left:480px;
+    margin-top: 28px;
+}
+#Mcart
+{
+    margin-left:1340px;
+    margin-top: -32px;
+}
+#logo
+{
+    margin-left:165px;
+    margin-top: -28px;
+    display: inline-block;
+}
+.hbar
+{
+    background-color: #464646;
+    color: white;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 14px;
+    margin-top: 85px;
+}
+.search-container
+{
+}
+.sbox
+{
+    height: 30px;
+    width: 550px;
+    margin-left:110px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.search
+{
+    background-color: red;
+    margin-left: -5px;
+    margin-top: -6px;
+    height: 33px;
+    width: 44px;
+    border: none;
+    cursor: pointer;
+    background-image: url("search-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+}
+#SBB
+{
+    padding: 155px;
+}
+#SBB2
+{
+    padding: 305px;
+}

@@ -1,0 +1,38 @@
+Roadmap for jQuery, Javascript, JSON
+
+i) jQuery (40 hrs)
+	- jQuery element selectors, and filtrations
+	- jQuery Events handling
+	- jQuery XHR/Ajax
+		-- GET method
+		-- POST method
+		-- Request body, header
+		-- Response call back handling, response data manipulation
+		-- Error handling
+	- jQuery - Effect and animation
+	- jQuery - Basics about plugins
+		- How to use jQuery third party plugin in html page
+		- How to configure  jQuery third party plugin in html page
+		- How to create "hello world" plugin 
+
+
+ii) JSON (16 hrs)
+	- JSON syntax
+	- JSON objects/array handling
+	- JSON - DataTypes
+
+
+iii) Javascript (40 hrs)
+	- Javascript syntax
+	- Javascript Variables, functions, Array , Objects
+	- Javascript operators
+	- Javascript Events 
+	- Javascript Looping 
+		- While loop
+		- For loop with iterator
+		- For loop with key value pair 
+		- Loop controls 
+	- Javascript Cookies handling 
+	- Javascript HTML DOM manipulation 
+
+

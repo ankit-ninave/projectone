@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-class {
+    background-image: url("tree.jpg");
+    width: 100%;
+    border: 3px solid black;
+
+}
+
+.for-width {
+    max-width: 1320px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 46%;
+}
+
+.first-one {
+    display: flex;
+    overflow: hidden;
+}
+
+.first-one li {
+    flex-wrap: wrap;
+    float: left;
+    padding: 15px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: 600;
+}
+li:hover
+{
+    background-color: #084a1a;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-class-2 {
+    background-image: url("tree.jpg");
+    width: 20%;
+    border: 3px solid black;
+}
+
+
+.second-one li {
+    flex-wrap: wrap;
+    padding: 15px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: 600;
+}
+.sub-1
+{
+    display: none;
+
+}
+.second-one ul li :hover .sub-1
+{
+    display: block;
+    position: absolute;
+    background-color: #b3d4fc;
+    margin-top: 15px;
+}
